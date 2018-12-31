@@ -1,0 +1,51 @@
+
+<div>
+  <br>
+  <mat-card>
+    <section class="mat-typography">
+      <h2>Create A New Gsection</h2>
+    </section>
+    <mat-divider></mat-divider>
+    <br>
+
+    <form [formGroup]="createForm" class="create-form">
+      <mat-form-field class="field-full-width">
+        <input matInput placeholder="Gsection Title" formControlName="title" #title>
+      </mat-form-field>
+
+      <mat-form-field class="field-full-width">
+          <input matInput placeholder="User" formControlName="user" #user>
+      </mat-form-field>
+
+      <mat-form-field class="field-full-width">
+        <input matInput placeholder="Category" formControlName="category" #category>
+     </mat-form-field>
+
+     <mat-form-field class="field-full-width">
+      <input matInput placeholder="Version" formControlName="version" #version>
+     </mat-form-field>
+
+     
+     <mat-form-field class="field-full-width">
+      <mat-select placeholder="Target" formControlName="target" #target>
+          <mat-option value="Draft">Draft</mat-option>
+          <mat-option value="Blog">Blog</mat-option>
+          <mat-option value="DigiPub">DigiPub</mat-option>
+        </mat-select>
+     </mat-form-field>
+
+      <mat-form-field class="field-full-width">
+          <textarea matInput placeholder="Content" formControlName="content" #content></textarea>
+      </mat-form-field>
+
+   
+      <mat-divider></mat-divider>
+      <br><br>
+      <button mat-raised-button color="accent" routerLink="/gsectionlist">Back</button>
+      <button type="submit" (click)="addGsection(title.value, user.value, content.value, version.value, category.value, target.value)" [disabled]="createForm.pristine || createForm.invalid" mat-raised-button color="primary">Save</button>
+    </form>
+
+
+  </mat-card>
+
+</div>

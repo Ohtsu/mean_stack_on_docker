@@ -1,0 +1,60 @@
+<div>
+  <br>
+  <mat-card>
+    <section class="mat-typography">
+      <h2>Update Gsection</h2>
+    </section>
+    <mat-divider></mat-divider>
+    <br>
+
+    <form [formGroup]="updateForm" class="edit-form">
+      <mat-form-field >
+        <input matInput placeholder="Gsection Title" formControlName="title" #title>
+      </mat-form-field>
+
+      <mat-form-field >
+          <input matInput placeholder="User" formControlName="user" readonly #user>
+      </mat-form-field>
+
+      <mat-form-field >
+        <input matInput placeholder="Created"  formControlName="created" readonly #created>
+      </mat-form-field>
+
+      <mat-form-field >
+        <input matInput placeholder="Updated" formControlName="updated" readonly #updated>
+      </mat-form-field>
+
+
+      <mat-form-field >
+        <input matInput placeholder="Version" formControlName="version" #version>
+      </mat-form-field>
+
+
+      <mat-form-field >
+        <input matInput placeholder="Category" formControlName="category" #category>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select placeholder="Target" formControlName="target" #target>
+            <mat-option value="draft" ng-selected="true">Draft</mat-option>
+            <mat-option value="blog">Blog</mat-option>
+            <mat-option value="digipub">DigiPub</mat-option>
+        </mat-select>
+       </mat-form-field>
+  
+
+      <mat-form-field class="content">
+          <textarea matInput placeholder="Content" formControlName="content" #content ></textarea>
+      </mat-form-field>
+
+
+      <mat-divider></mat-divider>
+      <br><br>
+      <button mat-raised-button color="accent" routerLink="/gsectionlist">Back</button>
+      <button type="submit" (click)="updateGsection(title.value, user.value, content.value, version.value, created.value, category.value, target.value)" [disabled]="updateForm.pristine || updateForm.invalid" mat-raised-button color="primary">Save</button>
+    </form>
+
+
+  </mat-card>
+
+</div>

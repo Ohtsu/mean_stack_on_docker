@@ -1,0 +1,55 @@
+table {
+    width: 100% ;
+}
+
+.mat-column-right {
+    text-align: center;
+}
+
+.header {
+ 	display: table-cell;
+}
+
+.create-button {
+    float: left;
+}
+
+.search-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-button {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    float: right;
+}
+.box {
+	float: left;
+}
+
+.boxContainer {
+	overflow: hidden;
+}
+
+/* clearfix */
+.boxContainer:before,
+.boxContainer:after {
+    content: "";
+    display: table;
+}
+ 
+.boxContainer:after {
+    clear: both;
+}
+ 
+/* For IE 6/7 (trigger hasLayout) */
+.boxContainer {
+    zoom: 1;
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
