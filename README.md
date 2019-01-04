@@ -476,7 +476,8 @@ Therefore, I decided to create a time-consuming Docker image at first, and once 
 
 This makes it possible to use the existing Docker image on the local site, so the connection of each container will be successful.
 
-Everyone please be aware of this point.
+_Everyone please be aware of this point_.
+
 --------------------
 
 
