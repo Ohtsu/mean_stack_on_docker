@@ -577,4 +577,42 @@ Everyone please be aware of this point.
 - "Angular5, Angular6, Angular7用 カスタムライブラリの作成: 完全ステップ・バイ・ステップ・ガイド", 
 <https://www.udemy.com/angular5-l/>
 
+### Others
+
+- "Docker用VS Code拡張機能　Angular7のコンテナ化", 
+<https://youtu.be/MCK_7e4jZHg>
+
+- "How to use VS Code Extension for Docker, Containerizing Angular 7", 
+<https://youtu.be/R2dva9aORTU>
+
+- "Docker for Windowsのインストール方法", 
+<https://youtu.be/iiAEEm1pTLg>
+
+- "How to install Docker for Windows", 
+<https://youtu.be/4-JKZeu_FV0>
+
+- "WSLへのDockerのインストール", 
+<https://youtu.be/abJqVYUAxR4>
+
+- "How to install Docker in Ubuntu on WSL", 
+<https://youtu.be/4wuHnaGJ1mM>
+
+- "Angular7におけるAngular Materialのインストール方法", 
+<https://youtu.be/i8roYTAAj-U>
+
+- "How to install Angular Material in Angular7", 
+<https://youtu.be/v_eZsVtnicA>
+
+- "WSL(Ubuntu)へのNodejsのインストール方法", 
+<https://youtu.be/iRph_coIUUs>
+
+- "How to install Nodejs in Ubuntu on WSL", 
+<https://youtu.be/hiWWXCZbY6A>
+
+- "Angular6におけるAngular Material Tableの利用方法", 
+<https://youtu.be/AsVctVk0Hxk>
+
+- "How to use Angular Material Table in Angular6", 
+<https://youtu.be/qt6TsDoQR7g>
+
 
