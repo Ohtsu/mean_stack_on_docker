@@ -34,6 +34,7 @@
         <input matInput placeholder="Category" formControlName="category" #category>
       </mat-form-field>
 
+  <!-- 
       <mat-form-field>
         <mat-select placeholder="Target" formControlName="target" #target>
             <mat-option value="draft" ng-selected="true">Draft</mat-option>
@@ -41,7 +42,17 @@
             <mat-option value="digipub">DigiPub</mat-option>
         </mat-select>
        </mat-form-field>
+   -->
+
+       <mat-form-field>
+        <select matNativeControl placeholder="Target" formControlName="target" #target>
+            <option value="draft" selected>Draft</option>
+            <option value="blog">Blog</option>
+            <option value="digipub">DigiPub</option>
+        </select>
+       </mat-form-field>
   
+
 
       <mat-form-field class="content">
           <textarea matInput placeholder="Content" formControlName="content" #content ></textarea>
